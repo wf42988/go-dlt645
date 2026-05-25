@@ -1,4 +1,4 @@
-module github.com/fdxxw/go-dlt645
+module github.com/wf42988/go-dlt645
 
 go 1.18
 
