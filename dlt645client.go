@@ -68,7 +68,7 @@ func (mb *dlt645SerialTransporter) Send(aduRequest []byte) (aduResponse []byte, 
 	var n int
 	var n1 int
 
-	n, err = ReadAtLeast(mb.port, data[:], 14, 500*time.Millisecond)
+	n, err = ReadAtLeast(mb.port, data[:], 14, 2000*time.Millisecond)
 	if err != nil {
 		return
 	}
